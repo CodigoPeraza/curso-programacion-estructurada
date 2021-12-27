@@ -39,6 +39,7 @@ int main()
         int menu;
 
         cout<< "1. bucle while \n";
+        cout<< "2. bucle for \n";
 
         cout<< "\n elige una opcion: ";
         cin>> menu;
@@ -55,12 +56,21 @@ int main()
 
             }break;
         
-        default: {
-            cout<< "default";
-        }break;
-        }
+        
+        case 2: {
 
-    }break;
+            cout<<"for (i = 0; i >= 10; i++)\n";
+            cout<<"    //contador//condicional//incremento-decremento\n";
+            cout<<"{\n\n";
+            cout<<"codigo\n\n";    
+            cout<<"}\n\n";
+            
+
+            }break;
+
+        } //fin de swich case3
+
+    }break; //break del case 3
     
     default:{
         cout << "nunca pares de aprender, elije una opción \n";
