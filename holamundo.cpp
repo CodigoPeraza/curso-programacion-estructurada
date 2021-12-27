@@ -34,9 +34,36 @@ int main()
     case 2: {
         cout<< " cout<< salida de datos \n cin>>entrada de datos por consola \n";
         }break;
+    case 3: {
+        system("clear");
+        int menu;
+
+        cout<< "1. bucle while \n";
+
+        cout<< "\n elige una opcion: ";
+        cin>> menu;
+        switch (menu)
+        {
+        case 1:{
+
+            cout<<"\nwhile (condición)\n";
+            cout<<"{ \n";
+            cout<<"     código que se ejecuta \n";
+            cout<<"     se recomienda usar un iterador ejemplo --> int i++;\n";
+            cout<<"     para evitar un ciclo infinito\n";
+            cout<< "} \n";
+
+            }break;
+        
+        default: {
+            cout<< "default";
+        }break;
+        }
+
+    }break;
     
     default:{
-        cout << "nunca pares de aprender";
+        cout << "nunca pares de aprender, elije una opción \n";
         }break;
     
     }
