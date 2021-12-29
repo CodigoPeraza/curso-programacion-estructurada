@@ -65,6 +65,28 @@ int main()
             cout<<"codigo\n\n";    
             cout<<"}\n\n";
             
+            //================================================================
+
+            //ejemplo for: fibonacci
+
+            int contador;
+
+            cout<< "Cuantos elementos de la sucesión quiere: ";
+            cin>> contador;
+            
+            int numero1 = 0;
+            int numero2 = 1;
+
+            for (int i = 0; i < contador; i++)
+            {
+                cout<< numero1;
+                int numero3 = numero1+numero2;
+                numero1 = numero2;
+                numero2 = numero3;
+                cout<<"\n";
+            }
+            
+            
 
             }break;
 
