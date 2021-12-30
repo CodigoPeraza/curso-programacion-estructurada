@@ -74,15 +74,15 @@ int main()
             cout<< "Cuantos elementos de la sucesión quiere: ";
             cin>> contador;
             
-            int numero1 = 0;
-            int numero2 = 1;
-
+            long a = 0;
+            long b = 1;
+            long c;
             for (int i = 0; i < contador; i++)
             {
-                cout<< numero1;
-                int numero3 = numero1+numero2;
-                numero1 = numero2;
-                numero2 = numero3;
+                cout<< a; 
+                c = a+b;
+                a = b;
+                b = c;
                 cout<<"\n";
             }
             
