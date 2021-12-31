@@ -1,3 +1,4 @@
+/*=============================COMENTARIO=============================*/
 //este es la rama testing
 //las librerias se agregan de esta forma
 #include <iostream> //iostream es una libreria de C++ para la entrada y la salida de datos
@@ -11,93 +12,106 @@ using namespace std;
 int main()
 
 {
-    int menu;
+    int opcion;
     cout<< "Repasemos lo aprendido \n";  
     //cout y cin son de la libreria de iostream
 
-    cout<< ("Elije una opción. \n1. Tipos de datos. \n2. Entrada y salida de datos. \n3. Estructuras de control. \n4. condicionales.\n");
-    cin >>menu;
-
-    switch (menu)
+    /*=============================MENÚ=============================*/
+    cout<< ("Elije una opción. \n");
+    cout<< "1. Tipos de datos. \n";
+    cout<< "2. Entrada y salida de datos. \n";
+    cout<< "3. Estructuras de control. \n";
+    cout<< "4. condicionales.\n";
+    cin >>opcion;
+    /*===============================================================*/
+    switch (opcion)
     {
-    case 1: {
+        case 1: {
 
-        cout<< " \n int entero = 20; \n float decimal = 20.5; \n string cadena = *entre comillas -->texto \n char caracter = 'q'; \n bool booleano = false; \n\n";
-        int entero = 20;
-        float decimal = 20.5;
-        string cadena = "texto";
-        char caracter = 'q';
-        bool booleano = false;
+            /*=============================TIPOS DE DATOS=============================*/
+            cout<< " \n int entero = 20; \n";
+            cout<<"float decimal = 20.5; \n";
+            cout<<"string cadena = *entre comillas -->texto \n";
+            cout<<"char caracter = 'q'; \n";
+            cout<<"bool booleano = false; \n\n";
+            }break; 
+            /*=========================================================================*/
 
-        }break; 
-        
-    case 2: {
-        cout<< " cout<< salida de datos \n cin>>entrada de datos por consola \n";
-        }break;
-    case 3: {
-        system("clear");
-        int menu;
-
-        cout<< "1. bucle while \n";
-        cout<< "2. bucle for \n";
-
-        cout<< "\n elige una opcion: ";
-        cin>> menu;
-        switch (menu)
-        {
-        case 1:{
-
-            cout<<"\nwhile (condición)\n";
-            cout<<"{ \n";
-            cout<<"     código que se ejecuta \n";
-            cout<<"     se recomienda usar un iterador ejemplo --> int i++;\n";
-            cout<<"     para evitar un ciclo infinito\n";
-            cout<< "} \n";
-
-            }break;
-        
-        
         case 2: {
 
-            cout<<"for (i = 0; i >= 10; i++)\n";
-            cout<<"    //contador//condicional//incremento-decremento\n";
-            cout<<"{\n\n";
-            cout<<"codigo\n\n";    
-            cout<<"}\n\n";
-            
-            //================================================================
-
-            //ejemplo for: fibonacci
-
-            int contador;
-
-            cout<< "Cuantos elementos de la sucesión quiere: ";
-            cin>> contador;
-            
-            long a = 0;
-            long b = 1;
-            long c;
-            for (int i = 0; i < contador; i++)
-            {
-                cout<< a; 
-                c = a+b;
-                a = b;
-                b = c;
-                cout<<"\n";
-            }
-            
-            
-
+            /*==============================E/S DE DATOS ==============================*/
+            cout<< " cout<< salida de datos \n ;";
+            cout<< "cin>>entrada de datos por consola \n";
             }break;
+            /*=========================================================================*/
 
-        } //fin de swich case3
+        case 3: {
+            
+            system("clear"); 
+            //NOTA: si se va a compilar para windows cambiar a system("cls");
+            
+            int opcion;
+            /*=============================MENÚ=============================*/
+            cout<< "1. bucle while \n";
+            cout<< "2. bucle for \n";
+            cout<< "\n elige una opcion: ";
+            cin>> opcion;
+            /*==============================================================*/
+            
+            switch (opcion)
+            {
+            case 1:{
 
-    }break; //break del case 3
-    
-    default:{
-        cout << "nunca pares de aprender, elije una opción \n";
-        }break;
-    
+                /*============================= WHILE =============================*/
+                cout<<"\nwhile (condición)\n";
+                cout<<"{ \n";
+                cout<<"     código que se ejecuta \n";
+                cout<<"     se recomienda usar un iterador ejemplo --> int i++;\n";
+                cout<<"     para evitar un ciclo infinito\n";
+                cout<< "} \n";
+                /*================================================================*/
+
+                }break;
+            
+            
+            case 2: {
+
+                /*============================= FOR =============================*/
+                cout<<"for (i = 0; i >= 10; i++)\n";
+                cout<<"    //contador//condicional//incremento-decremento\n";
+                cout<<"{\n\n";
+                cout<<"codigo\n\n";    
+                cout<<"}\n\n";
+                
+                /*=========================EJEMPLO FOR==============================*/
+                /*========================= FIBONACCI ==============================*/
+                int contador;
+
+                cout<< "Cuantos elementos de la sucesión quiere: ";
+                cin>> contador;
+                
+                long a = 0;
+                long b = 1;
+                long c;
+                for (int i = 0; i < contador; i++)
+                {
+                    cout<< a; 
+                    c = a+b;
+                    a = b;
+                    b = c;
+                    cout<<"\n";
+                }
+                /*==================================================================*/
+                }break;
+
+            } //fin de swich case3
+
+        }break; //break del case 3
+        
+        default:{
+            cout << "nunca pares de aprender, elije una opción \n";
+            }break;
+        
     }
 
     return 0;
