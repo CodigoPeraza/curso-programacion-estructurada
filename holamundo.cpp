@@ -20,7 +20,7 @@ int main()
     cout<< ("Elije una opción. \n");
     cout<< "1. Tipos de datos. \n";
     cout<< "2. Entrada y salida de datos. \n";
-    cout<< "3. Estructuras de control. \n";
+    cout<< "3. control de flujo \n";
     cout<< "4. condicionales.\n";
     cin >>opcion;
     /*===============================================================*/
