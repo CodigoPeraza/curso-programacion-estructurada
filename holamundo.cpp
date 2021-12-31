@@ -140,40 +140,46 @@ int main()
                     
                     cout<<"/*==================== EJEMPLO DE DO WHILE =======================*/\n";
                     cout<<"menú con opción para salir\n";
+                    //la variable que la entienen tanto mim do while como mi switch tiene que declararse fuera
+                    int opcion1 = 0; 
+                    bool repetir_while = true; 
+                    
 
                     do
                     {
-                        system("clear"); 
-                        //NOTA: si se va a compilar para windows cambiar a system("cls");
                         cout<<"Elije una opción: \n\n";
                         cout<<"1. decir hola mundo\n";
-                        cout<<"2. decir hacta luego\n";
+                        cout<<"2. decir hasta luego\n";
                         cout<<"3. salir\n";
-                        int opcion1;
-                        cin>>opcion1;
-                        switch (opcion1)
+                        int opcion;
+                        cin>>opcion;
+                        switch (opcion)
                         {
                         case 1: {
-
+                        system("clear"); 
+                        //NOTA: si se va a compilar para windows cambiar a system("cls");                            
                             cout<<"hola mundo!!! :) \n";
                         }break;
                         
-                        case 2: {
+                        case 2: 
+                        {
                             cout<<"Hasta luego!!! :D  \n";
+                        }break;
+
+                        case 3: 
+                        {
+                            repetir_while = false;
                         }
 
-                        case 3: {
-                            int opcion1 = 3;
-                        }
-
-                        default: {
-
+                        default: 
+                        {
                             cout<<"elija una opción valida: \n";
                             break;
                         }
                         }
 
-                    }while (opcion1 == 3);
+                    }while (repetir_while == true);
+                    
                         
                 }
             } //fin del switch del case 3
