@@ -56,6 +56,9 @@ int main()
             cout<< "2. bucle for \n";
             cout<< "\n elige una opcion: ";
             cin>> opcion;
+            system("clear"); 
+                //NOTA: si se va a compilar para windows cambiar a system("cls");
+                
             /*==============================================================*/
             
             switch (opcion)
@@ -68,9 +71,31 @@ int main()
                 cout<<"     código que se ejecuta \n";
                 cout<<"     se recomienda usar un iterador ejemplo --> int i++;\n";
                 cout<<"     para evitar un ciclo infinito\n";
-                cout<< "} \n";
-                /*================================================================*/
+                cout<< "} \n";                
+                                
+                cout<<"/*========================== EJEMPLO WHILE ========================*/\n\n";
+                cout<<"imprime n numeros\n\n";
+                cout<<"¿cuantos números desea imprimir? \n";
+                cout<<":";
 
+                short n;
+                cin>>n; 
+                system("clear"); 
+                //NOTA: si se va a compilar para windows cambiar a system("cls");
+                
+
+                int i = 0;            
+                while (i <= n)
+                {
+                    int numero = i;
+                    cout<< numero; //imprime el valor de i
+                    cout<<"\n";
+                    i++; //incrementa el valor de i
+
+                }
+                
+
+                /*=================================================================*/
                 }break;
             
             
